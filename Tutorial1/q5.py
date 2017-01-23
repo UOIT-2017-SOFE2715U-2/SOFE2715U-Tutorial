@@ -1,4 +1,4 @@
-from abc import ABCMeta, abstractmethod, abstractproperty
+from abc import ABCMeta, abstractmethod
 
 # defining abstract class
 class Pet(object):
@@ -42,7 +42,7 @@ class Cat(Pet):
     def get_type(self):
         return "Cat"
 
-# creat objects of type Cat and Dog
+# creating objects of type Cat and Dog
 myCat = Cat("Toby", 2,"male")
 myDog = Dog("Bella", 3, "female")
 myPets = [myCat,myDog]
