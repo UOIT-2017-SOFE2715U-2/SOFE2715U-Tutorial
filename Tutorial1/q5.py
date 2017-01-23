@@ -1,6 +1,6 @@
 from abc import ABCMeta, abstractmethod, abstractproperty
 
-# defing abstract class
+# defining abstract class
 class Pet(object):
     __metaclass__ = ABCMeta
 
@@ -20,7 +20,7 @@ class Pet(object):
     def get_sex(self):
         return self.sex
 
-# below functions left the implementation for inheriting classes
+# abstract functions
     @abstractmethod
     def speak(self):
         pass
