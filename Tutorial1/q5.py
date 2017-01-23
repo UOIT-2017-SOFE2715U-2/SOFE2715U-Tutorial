@@ -1,4 +1,6 @@
 from abc import ABCMeta, abstractmethod, abstractproperty
+
+# defing abstract class
 class Pet(object):
     __metaclass__ = ABCMeta
 
@@ -18,12 +20,14 @@ class Pet(object):
     def get_sex(self):
         return self.sex
 
+# below functions left the implementation for inheriting classes
     @abstractmethod
     def speak(self):
         pass
     def get_type(self):
         pass
 
+# define classes of type Pet
 class Dog(Pet):
     def speak(self):
         return "Bark Bark!"
@@ -38,6 +42,7 @@ class Cat(Pet):
     def get_type(self):
         return "Cat"
 
+# creat objects of type Cat and Dog
 myCat = Cat("Toby", 2,"male")
 myDog = Dog("Bella", 3, "female")
 myPets = [myCat,myDog]
