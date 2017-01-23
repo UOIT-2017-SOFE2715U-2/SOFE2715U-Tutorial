@@ -1,7 +1,4 @@
-i = 1
-for i in range(1, 11):
-    i + 1
-    y = i%2
-    if y != 0: print " odd"
-    else: print " even"
+#initially created by Matthew Rabski before creating GitHub repoitory
 
+for i in range(1, 11):
+    print "odd" if i%2 else "even"
