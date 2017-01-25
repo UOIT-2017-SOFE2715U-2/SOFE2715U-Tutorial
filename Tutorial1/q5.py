@@ -1,5 +1,6 @@
 from abc import ABCMeta, abstractmethod
 
+
 # defining abstract class
 class Pet(object):
     __metaclass__ = ABCMeta
@@ -15,8 +16,10 @@ class Pet(object):
 
     def get_age(self):
         return self.age
+
     def get_name(self):
         return self.name
+
     def get_sex(self):
         return self.sex
 
@@ -24,8 +27,10 @@ class Pet(object):
     @abstractmethod
     def speak(self):
         pass
+
     def get_type(self):
         pass
+
 
 # define classes of type Pet
 class Dog(Pet):
@@ -34,6 +39,7 @@ class Dog(Pet):
 
     def get_type(self):
         return "Dog"
+
 
 class Cat(Pet):
     def speak(self):
